@@ -70,7 +70,7 @@ function trParseBody(body)
 function getSlackUserName(parsedBody, type)
 {
     return (
-        parsedBody.DisplayName
+        parsedBody.NameSwe !== '' ? parsedBody.NameSwe : parsedBody.NameEng
     );
 }
 
